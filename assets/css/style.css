@@ -1,11 +1,90 @@
-*{
-    box-sizing: border-box;
-}
-html {
-    font-size: 62.5%;
-}
-body{
-    font-size: 1.6rem;
-    font-family: "Open Sans", sans-serif;
+* {
+  box-sizing: border-box;
 }
 
+:root {
+  --header-bg: #10375c;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+/* =========================================container============================ */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  max-width: calc(100% - 48px);
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  line-height: 60px;
+  border-radius: 999px;
+  background: #2e80ce;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+/* =========================================header=============================== */
+.header {
+  background: var(--header-bg);
+  min-height: 100vh;
+  padding-top: 30px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+}
+.header__action--login,
+.navbar__link {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  padding: 8px 21px;
+}
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0px 0px #fff;
+  /* position: relative; */
+}
+
+.navbar__link--active::before {
+  /* position: absolute; */
+  /* transform: translate(-8px, 11px); */
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  right: 8px;
+  top: -3px;
+}
+.header__action--signup{
+  font-size: 1.6rem;
+  min-width: 104px;
+  line-height: 44px;
+}
+.header__action--login{
+    margin-right: 7px;
+}
