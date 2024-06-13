@@ -53,29 +53,29 @@ a {
   line-height: 1.67; /* 166.667% */
 }
 /* control-btn */
-.control{
+.control {
   display: flex;
   column-gap: 18px;
   align-items: center;
 }
-.control__btn{
+.control__btn {
   width: 36px;
-height: 36px;
-border-radius: 36px;
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid #575F66;
-background: #fff;
-cursor: pointer;
-transition: 0.25s;
+  height: 36px;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #575f66;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.25s;
 }
-.control__btn:hover{
-  background: #2E80CE;
-  border-color: #2E80CE;
-  color: #fff
+.control__btn:hover {
+  background: #2e80ce;
+  border-color: #2e80ce;
+  color: #fff;
 }
-.control-icon--next{
+.control-icon--next {
   rotate: 180deg;
 }
 /* =========================================header=============================== */
@@ -371,12 +371,10 @@ transition: 0.25s;
   border-radius: 6px;
   padding-top: 28px;
   overflow: hidden;
- 
 }
-.team-item:hover .team-item__thumb{
+.team-item:hover .team-item__thumb {
   transform: scale(1.1);
 }
-
 
 .team-item__name {
   color: #10375c;
@@ -384,14 +382,54 @@ transition: 0.25s;
   font-size: 1.6rem;
   line-height: 1.75;
 }
-.team-item__desc{
-  color: #575F66;
-text-align: center;
-font-size: 1.4rem;
-font-weight: 300;
-line-height: 1.86; /* 185.714% */
+.team-item__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86; /* 185.714% */
 }
-.team__control{
+.team__control {
   margin-top: 38px;
   justify-content: center;
+}
+/* =========================================install======================================== */
+.install__inner {
+  margin: 180px 0 85px;
+  height: 427px;
+  border-radius: 4px;
+  background: #2e80ce;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  position: relative;
+}
+.install__img {
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0px;
+}
+.install__content {
+  max-width: 586px;
+}
+.install__heading {
+  max-width: 489px;
+  color: #fff;
+}
+.install__desc {
+  color: #fff;
+  max-width: 586px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+  margin-top: 18px;
+}
+.install__row{
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 28px ;
 }
