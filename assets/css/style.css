@@ -519,3 +519,28 @@ a {
 .blog-item__more:hover {
   color: #2e80ce;
 }
+/* ===========================================appoinment=========================== */
+.appoinment {
+  background: #f6fbff;
+  margin: 85px 0;
+  padding: 100px 178px;
+}
+.appoinment__inner{
+  text-align: center;
+}
+.appoinment__heading::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 2px;
+  background: #2E80CE;
+margin: 18px auto 0;
+}
+.appoinment__desc {
+  width: 53%;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+.appoinment__btn{
+  margin-top: 38px;
+}
